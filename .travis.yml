@@ -1,0 +1,11 @@
+language: python
+python:
+ -"2.7"
+chache: pip
+install:
+ -pip install codecov
+script:
+ -coverage run factorial_no.py
+
+after_success:
+ -codecov
