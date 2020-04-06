@@ -1,11 +1,11 @@
 language: python
 python:
- -"3.7"
+ - "2.7"
 chache: pip
 install:
- -pip install codecov
+ - pip install codecov
 script:
- -coverage run factorial_no.py
+ - coverage run factorial_no.py
 
 after_success:
- -codecov
+ - codecov
